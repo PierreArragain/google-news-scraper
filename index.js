@@ -5,7 +5,7 @@ const cheerio = require("cheerio");
 const fetch = require("node-fetch");
 const buildQueryString = require("./buildQueryString");
 
-export default async (config) => {
+async function scrapeNews(config) {
   const queryString = config.queryVars
     ? buildQueryString(config.queryVars)
     : "";
@@ -112,4 +112,6 @@ export default async (config) => {
   await browser.close();
 
   return results.filter((result) => result.title);
-};
+}
+
+module.exports = scrapeNews;
