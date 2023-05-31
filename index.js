@@ -3,7 +3,7 @@
 const puppeteer = require("puppeteer");
 const cheerio = require("cheerio");
 const fetch = require("node-fetch");
-const buildQueryString = require("./buildQueryString").default;
+const buildQueryString = require("./buildQueryString");
 
 async function scrapeNews(config) {
   const queryString = config.queryVars
