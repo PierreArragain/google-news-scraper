@@ -12,4 +12,4 @@ async function buildQueryString(query) {
     .join("&");
 }
 
-export default buildQueryString;
+module.exports = buildQueryString;

@@ -113,4 +113,5 @@ async function scrapeNews(config) {
 
   return results.filter((result) => result.title);
 }
-export default scrapeNews;
+
+module.exports = scrapeNews;
