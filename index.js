@@ -1,9 +1,9 @@
 "use strict";
 
-const puppeteer = require("puppeteer");
-const cheerio = require("cheerio");
-const fetch = require("node-fetch");
-const buildQueryString = require("./buildQueryString");
+import cheerio from "cheerio";
+import fetch from "node-fetch";
+import puppeteer from "puppeteer";
+import buildQueryString from "./buildQueryString.js";
 
 async function scrapeNews(config) {
   const queryString = config.queryVars
@@ -113,5 +113,4 @@ async function scrapeNews(config) {
 
   return results.filter((result) => result.title);
 }
-
-module.exports = scrapeNews;
+export default scrapeNews;
