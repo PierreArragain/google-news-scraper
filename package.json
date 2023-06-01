@@ -3,7 +3,7 @@
   "version": "1.0.9",
   "type": "module",
   "description": "Lightweight async scraper for Google News",
-  "main": "index.js",
+  "main": "index.cjs.js",
   "scripts": {
     "test": "jest"
   },
